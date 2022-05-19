@@ -20,11 +20,6 @@ body {
     aspect-ratio: 700/394;
     align-items: center;
     overflow: hidden;
-    /* scroll-snap-type: x mandatory; */
-}
-
-.slides>div {
-    /* scroll-snap-align: end; */
 }
 
 .slide {
@@ -55,13 +50,12 @@ body {
     align-items: center;
 }
 
-.caption{
+.caption {
     position: absolute;
     opacity: 0;
 }
 
-.control_wrapper {
-}
+.control_wrapper {}
 
 .slider__input {
     display: none;
@@ -82,7 +76,7 @@ body {
     align-items: center;
 }
 
-.crumble{
+.crumble {
     width: 1.3rem;
     height: 1.3rem;
     background-color: #000000;
@@ -99,27 +93,27 @@ body {
     background-color: rgb(205, 6, 6);
 }
 
-.input{
+.input {
     display: none;
 }
 
-#in-1:checked ~ .caption_control_wrapper .control_wrapper .control #crumble-1{
+#in-1:checked~.caption_control_wrapper .control_wrapper .control #crumble-1 {
     opacity: 1;
 }
 
-#in-2:checked ~ .caption_control_wrapper .control_wrapper .control #crumble-2{
+#in-2:checked~.caption_control_wrapper .control_wrapper .control #crumble-2 {
     opacity: 1;
 }
 
-#in-3:checked ~ .caption_control_wrapper .control_wrapper .control #crumble-3{
+#in-3:checked~.caption_control_wrapper .control_wrapper .control #crumble-3 {
     opacity: 1;
 }
 
-#in-4:checked ~ .caption_control_wrapper .control_wrapper .control #crumble-4{
+#in-4:checked~.caption_control_wrapper .control_wrapper .control #crumble-4 {
     opacity: 1;
 }
 
-#in-1:checked~ .slides .slide {
+#in-1:checked~.slides .slide {
     transform: translate(0%);
 }
 
@@ -135,31 +129,30 @@ body {
     transform: translate(-300%);
 }
 
-#in-1:checked~ .caption_control_wrapper .caption_wrapper #c-1{
+#in-1:checked~.caption_control_wrapper .caption_wrapper #c-1 {
     opacity: 1;
 }
 
-#in-2:checked~ .caption_control_wrapper .caption_wrapper #c-2{
+#in-2:checked~.caption_control_wrapper .caption_wrapper #c-2 {
     opacity: 1;
 }
 
-#in-3:checked~ .caption_control_wrapper .caption_wrapper #c-3{
+#in-3:checked~.caption_control_wrapper .caption_wrapper #c-3 {
     opacity: 1;
 }
 
-#in-4:checked~ .caption_control_wrapper .caption_wrapper #c-4{
+#in-4:checked~.caption_control_wrapper .caption_wrapper #c-4 {
     opacity: 1;
 }
 
-@media (max-width: 960px){
-    .caption_control_wrapper{
+@media (max-width: 960px) {
+    .caption_control_wrapper {
         flex-direction: column-reverse;
-        justify-content: center; 
+        justify-content: center;
         align-items: center;
     }
 
-    .caption_wrapper{
+    .caption_wrapper {
         align-self: flex-start;
     }
-
 }
