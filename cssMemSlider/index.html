@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/normalize.css">
+    <link rel="stylesheet" href="./src/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>CSS meme slider</title>
+</head>
+
+<body>
+    <div class="slider_wrapper">
+        <input class="input" type="radio" id="in-1" name="toggle" checked>
+        <input class="input" type="radio" id="in-2" name="toggle">
+        <input class="input" type="radio" id="in-3" name="toggle">
+        <input class="input" type="radio" id="in-4" name="toggle">
+        <div class="slides">
+            <div class="slide" id="s-1">
+                <img class="img" src="./assets/imgs/1.jpg">
+            </div>
+            <div class="slide" id="s-2">
+                <img class="img" src="./assets/imgs/2.jpg">
+            </div>
+            <div class="slide" id="s-3">
+                <img class="img" src="./assets/imgs/3.jpg">
+            </div>
+            <div class="slide" id="s-4">
+                <img class="img" src="./assets/imgs/4.jpg">
+            </div>
+        </div>
+        <div class="caption_control_wrapper">
+            <div class="caption_wrapper">
+                <div class="caption" id="c-1">Very funny giant ducks</div>
+                <div class="caption" id="c-2">What you think it memes</div>
+                <div class="caption" id="c-3">Oh, I see now...</div>
+                <div class="caption" id="c-4">Let`s make money together</div>
+            </div>
+            <div class="control_wrapper">
+                <div class="controls">
+                    <label class="control" for="in-1" id="control-1">
+                        <div class="crumble" id="crumble-1"></div>
+                    </label>
+                    <label class="control" for="in-2" id="control-2">
+                        <div class="crumble" id="crumble-2"></div>
+                    </label>
+                    <label class="control" for="in-3" id="control-3">
+                        <div class="crumble" id="crumble-3"></div>
+                    </label>
+                    <label class="control" for="in-4" id="control-4">
+                        <div class="crumble" id="crumble-4"></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
