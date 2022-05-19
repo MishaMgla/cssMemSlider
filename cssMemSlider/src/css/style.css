@@ -52,6 +52,7 @@ body {
     font-size: 1.1em;
     font-family: sans-serif;
     display: flex;
+    align-items: center;
 }
 
 .caption{
@@ -148,4 +149,17 @@ body {
 
 #in-4:checked~ .caption_control_wrapper .caption_wrapper #c-4{
     opacity: 1;
+}
+
+@media (max-width: 960px){
+    .caption_control_wrapper{
+        flex-direction: column-reverse;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .caption_wrapper{
+        align-self: flex-start;
+    }
+
 }
